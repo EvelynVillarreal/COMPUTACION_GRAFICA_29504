@@ -37,5 +37,12 @@ namespace _2D_shapes
             frmTriangle.MdiParent = this;
             frmTriangle.Show();
         }
+
+        private void miHexagonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmHexagon frmHexagon = new FrmHexagon();
+            frmHexagon.MdiParent = this;
+            frmHexagon.Show();
+        }
     }
 }

@@ -94,6 +94,7 @@ namespace _2D_shapes
             {
                 g.DrawRectangle(pen, x, y, rectWidth, rectLength);
             }
+            g.FillRectangle(Brushes.Yellow, x, y, rectWidth, rectLength);
         }
     }
 }

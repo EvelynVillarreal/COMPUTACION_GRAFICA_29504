@@ -52,6 +52,12 @@
     <Compile Include="FrmExample.Designer.cs">
       <DependentUpon>FrmExample.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmHexagon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHexagon.Designer.cs">
+      <DependentUpon>FrmHexagon.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmExample.resx">
       <DependentUpon>FrmExample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHexagon.resx">
+      <DependentUpon>FrmHexagon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>

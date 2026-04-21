@@ -68,10 +68,24 @@ namespace _2D_shapes
 
             //tipo de triángulo
             string triangleType;
-            if (a == b && b == c)
+
+            double[] lados = new double[] { a, b, c };
+            Array.Sort(lados);
+            double l1 = lados[0];
+            double l2 = lados[1];
+            double l3 = lados[2];
+            double epsilon = 0.0001; // tolerancia para comparación de flotantes
+            bool isRightAngled = Math.Abs(Math.Pow(l3, 2) - (Math.Pow(l1, 2) + Math.Pow(l2, 2))) < epsilon;
+
+            if (isRightAngled)
+            {
+                triangleType = "Right-angled";
+            }
+            else if (a == b && b == c)
             {
                 triangleType = "Equilateral";
             }
+            
             else if (a == b || b == c || a == c)
             {
                 triangleType = "Isosceles";

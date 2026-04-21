@@ -30,10 +30,11 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.miGraphicsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miExampleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miShapesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miRectangleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.miExampleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miTriangleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miHexagonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,14 +56,22 @@
             this.miGraphicsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.miExampleToolStripMenuItem});
             this.miGraphicsToolStripMenuItem.Name = "miGraphicsToolStripMenuItem";
-            this.miGraphicsToolStripMenuItem.Size = new System.Drawing.Size(96, 32);
+            this.miGraphicsToolStripMenuItem.Size = new System.Drawing.Size(96, 29);
             this.miGraphicsToolStripMenuItem.Text = "Graphics";
+            // 
+            // miExampleToolStripMenuItem
+            // 
+            this.miExampleToolStripMenuItem.Name = "miExampleToolStripMenuItem";
+            this.miExampleToolStripMenuItem.Size = new System.Drawing.Size(180, 34);
+            this.miExampleToolStripMenuItem.Text = "Example";
+            this.miExampleToolStripMenuItem.Click += new System.EventHandler(this.miExampleToolStripMenuItem_Click);
             // 
             // miShapesToolStripMenuItem
             // 
             this.miShapesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.miRectangleToolStripMenuItem,
-            this.miTriangleToolStripMenuItem});
+            this.miTriangleToolStripMenuItem,
+            this.miHexagonToolStripMenuItem});
             this.miShapesToolStripMenuItem.Name = "miShapesToolStripMenuItem";
             this.miShapesToolStripMenuItem.Size = new System.Drawing.Size(85, 29);
             this.miShapesToolStripMenuItem.Text = "Shapes";
@@ -74,19 +83,19 @@
             this.miRectangleToolStripMenuItem.Text = "Rectangle";
             this.miRectangleToolStripMenuItem.Click += new System.EventHandler(this.miRectangleToolStripMenuItem_Click);
             // 
-            // miExampleToolStripMenuItem
-            // 
-            this.miExampleToolStripMenuItem.Name = "miExampleToolStripMenuItem";
-            this.miExampleToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.miExampleToolStripMenuItem.Text = "Example";
-            this.miExampleToolStripMenuItem.Click += new System.EventHandler(this.miExampleToolStripMenuItem_Click);
-            // 
             // miTriangleToolStripMenuItem
             // 
             this.miTriangleToolStripMenuItem.Name = "miTriangleToolStripMenuItem";
             this.miTriangleToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.miTriangleToolStripMenuItem.Text = "Triangle";
             this.miTriangleToolStripMenuItem.Click += new System.EventHandler(this.miTriangleToolStripMenuItem_Click);
+            // 
+            // miHexagonToolStripMenuItem
+            // 
+            this.miHexagonToolStripMenuItem.Name = "miHexagonToolStripMenuItem";
+            this.miHexagonToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.miHexagonToolStripMenuItem.Text = "Hexagon";
+            this.miHexagonToolStripMenuItem.Click += new System.EventHandler(this.miHexagonToolStripMenuItem_Click);
             // 
             // FrmHome
             // 
@@ -113,5 +122,6 @@
         private System.Windows.Forms.ToolStripMenuItem miRectangleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem miExampleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem miTriangleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miHexagonToolStripMenuItem;
     }
 }
