@@ -7,12 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using _2D_shapes.Controllers;
+using _2D_shapes.Models;
 
 namespace _2D_shapes
 {
     public partial class FrmHexagon : Form
     {
-        double lHexagon = 0;
+        private readonly HexagonController _controller = new HexagonController();
+        private Hexagon _model;
+
         public FrmHexagon()
         {
             InitializeComponent();
@@ -20,19 +24,16 @@ namespace _2D_shapes
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            double l;
-            if(!double.TryParse(txtL.Text, out l)||l<=0)
+            if (!_controller.TryCreateHexagon(txtL.Text, out Hexagon hex, out string error))
             {
-                MessageBox.Show("Please enter a valid numeric value for the side of the hexagon.");
+                MessageBox.Show(error, "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            lHexagon = l;
-            double a = l * 0.866; //altura del hexagono
-            double perimeter = 6 * l;
-            double area = (perimeter * a)/2;
 
-            txtPerimeter.Text = perimeter.ToString("0.00");
-            txtArea.Text = area.ToString("0.00");
+            _model = hex;
+
+            txtPerimeter.Text = _model.Perimeter.ToString("0.00");
+            txtArea.Text = _model.Area.ToString("0.00");
 
             pnlHexagon.Invalidate(); //limpiar el panel de dibujo
 
@@ -43,6 +44,7 @@ namespace _2D_shapes
             txtL.Clear();
             txtPerimeter.Clear();
             txtArea.Clear();
+            _model = null;
             pnlHexagon.Invalidate(); //limpiar el panel de dibujo
         }
 
@@ -53,7 +55,8 @@ namespace _2D_shapes
 
         private void pnlHexagon_Paint(object sender, PaintEventArgs e)
         {
-            if(lHexagon <= 0) return;
+            if (_model == null) return;
+            double lHexagon = _model.Side;
             Graphics g = e.Graphics;
 
             int centerX = pnlHexagon.Width / 2;
@@ -89,7 +92,7 @@ namespace _2D_shapes
 
                 g.DrawPolygon(Pens.Black, new PointF[] { p1,p2,p3});
                 g.FillPolygon(brushes[i], new PointF[] { p1, p2, p3});
-      
+
             }
             using (Pen pen = new Pen(Color.Black, 2))
             {

@@ -44,5 +44,26 @@ namespace _2D_shapes
             frmHexagon.MdiParent = this;
             frmHexagon.Show();
         }
+
+        private void miCircleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Circle frmCircle = new Circle();
+            frmCircle.MdiParent = this;
+            frmCircle.Show();
+        }
+
+        private void miEllipseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmEllipse frmEllipse = new FrmEllipse();
+            frmEllipse.MdiParent = this;
+            frmEllipse.Show();
+        }
+
+        private void miSemicircleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmSemicircle frmSemicircle = new FrmSemicircle();
+            frmSemicircle.MdiParent = this;
+            frmSemicircle.Show();
+        }
     }
 }

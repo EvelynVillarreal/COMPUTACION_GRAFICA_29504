@@ -7,13 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using _2D_shapes.Controllers;
+using _2D_shapes.Models;
 
 namespace _2D_shapes
 {
     public partial class FrmRectangle : Form
     {
-        double currentWidth = 0;
-        double currentLength = 0;
+        private readonly RectangleController _controller = new RectangleController();
+        private RectangleShape _model;
 
         public FrmRectangle()
         {
@@ -27,6 +29,7 @@ namespace _2D_shapes
             txtLengthB.Clear();
             txtPerimeter.Clear();
             txtArea.Clear();
+            _model = null;
             pnlRectangle.Invalidate(); //limpiar el panel de dibujo
         }
 
@@ -37,52 +40,31 @@ namespace _2D_shapes
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            double width, length;
-            //validar que los campos no esten vacios
-            if (string.IsNullOrEmpty(txtWidthA.Text) || string.IsNullOrEmpty(txtLengthB.Text))
+            if (!_controller.TryCreateRectangle(txtWidthA.Text, txtLengthB.Text, out RectangleShape rect, out string error))
             {
-                MessageBox.Show("Please enter values for width and length.");
+                MessageBox.Show(error, "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if(!double.TryParse(txtWidthA.Text, out width) || !double.TryParse(txtLengthB.Text, out length))
-            {
-                MessageBox.Show("Please enter valid numeric values for width and length.");
-                return;
-            }
-            if (width <= 0 || length <= 0)
-            {
-                MessageBox.Show("Width and length must be positive numbers.");
-                return;
-            }
-            //calcular el perimetro y area del rectangulo
-            double perimeter = 2 * (width + length);
-            double area = width * length;
 
-            txtPerimeter.Text = perimeter.ToString("0.00");
-            txtArea.Text = area.ToString("0.00");
+            _model = rect;
 
-            //graficar el rectangulo
-            currentWidth = width;
-            currentLength = length;
+            txtPerimeter.Text = _model.Perimeter.ToString("0.00");
+            txtArea.Text = _model.Area.ToString("0.00");
 
             pnlRectangle.Invalidate(); //refrescar el panel para que se vuelva a dibujar el rectangulo con las nuevas dimensiones
         }
 
         private void pnlRectangle_Paint(object sender, PaintEventArgs e)
         {
-            //si los campos de ancho y largo estan vacios, no graficar el rectangulo
-            if (currentWidth <=0 && currentLength <=0) return;
+            if (_model == null) return;
             Graphics g = e.Graphics;
             int margin = 10;
             int pnlWidth = pnlRectangle.Width - 2 * margin;
             int pnlLength = pnlRectangle.Height - 2 * margin;
 
-            double width = double.TryParse(txtWidthA.Text, out double w) ? w : 0;
-            double length = double.TryParse(txtLengthB.Text, out double l) ? l : 0;
+            double width = _model.Width;
+            double length = _model.Length;
 
-            //double scaleX = pnlWidth / width;
-            //double scaleY = pnlLength / length;
-            //double scale = Math.Min(scaleX, scaleY);
             double scale = 10;
             int rectWidth = (int)(width * scale);
             int rectLength = (int)(length * scale);

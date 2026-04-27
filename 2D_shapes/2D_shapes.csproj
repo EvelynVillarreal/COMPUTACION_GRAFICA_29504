@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CircleController.cs" />
+    <Compile Include="Controllers\EllipseController.cs" />
+    <Compile Include="Controllers\HexagonController.cs" />
+    <Compile Include="Controllers\RectangleController.cs" />
+    <Compile Include="Controllers\SemicircleController.cs" />
+    <Compile Include="Controllers\TriangleController.cs" />
+    <Compile Include="FrmCircle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCircle.Designer.cs">
+      <DependentUpon>FrmCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEllipse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEllipse.Designer.cs">
+      <DependentUpon>FrmEllipse.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmExample.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,14 +88,33 @@
     <Compile Include="FrmRectangle.Designer.cs">
       <DependentUpon>FrmRectangle.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSemicircle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSemicircle.Designer.cs">
+      <DependentUpon>FrmSemicircle.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTriangle.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmTriangle.Designer.cs">
       <DependentUpon>FrmTriangle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Circle.cs" />
+    <Compile Include="Models\Ellipse.cs" />
+    <Compile Include="Models\Hexagon.cs" />
+    <Compile Include="Models\IShape.cs" />
+    <Compile Include="Models\RectangleShape.cs" />
+    <Compile Include="Models\Semicircle.cs" />
+    <Compile Include="Models\Triangle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCircle.resx">
+      <DependentUpon>FrmCircle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEllipse.resx">
+      <DependentUpon>FrmEllipse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmExample.resx">
       <DependentUpon>FrmExample.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRectangle.resx">
       <DependentUpon>FrmRectangle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSemicircle.resx">
+      <DependentUpon>FrmSemicircle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTriangle.resx">
       <DependentUpon>FrmTriangle.cs</DependentUpon>

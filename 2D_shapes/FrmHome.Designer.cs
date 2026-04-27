@@ -35,6 +35,10 @@
             this.miRectangleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miTriangleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miHexagonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miCircumferencesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miCircleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miEllipseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miSemicircleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,7 +75,8 @@
             this.miShapesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.miRectangleToolStripMenuItem,
             this.miTriangleToolStripMenuItem,
-            this.miHexagonToolStripMenuItem});
+            this.miHexagonToolStripMenuItem,
+            this.miCircumferencesToolStripMenuItem});
             this.miShapesToolStripMenuItem.Name = "miShapesToolStripMenuItem";
             this.miShapesToolStripMenuItem.Size = new System.Drawing.Size(85, 29);
             this.miShapesToolStripMenuItem.Text = "Shapes";
@@ -96,6 +101,37 @@
             this.miHexagonToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.miHexagonToolStripMenuItem.Text = "Hexagon";
             this.miHexagonToolStripMenuItem.Click += new System.EventHandler(this.miHexagonToolStripMenuItem_Click);
+            // 
+            // miCircumferencesToolStripMenuItem
+            // 
+            this.miCircumferencesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.miCircleToolStripMenuItem,
+            this.miEllipseToolStripMenuItem,
+            this.miSemicircleToolStripMenuItem});
+            this.miCircumferencesToolStripMenuItem.Name = "miCircumferencesToolStripMenuItem";
+            this.miCircumferencesToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.miCircumferencesToolStripMenuItem.Text = "Circumferences";
+            // 
+            // miCircleToolStripMenuItem
+            // 
+            this.miCircleToolStripMenuItem.Name = "miCircleToolStripMenuItem";
+            this.miCircleToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.miCircleToolStripMenuItem.Text = "Circle";
+            this.miCircleToolStripMenuItem.Click += new System.EventHandler(this.miCircleToolStripMenuItem_Click);
+            // 
+            // miEllipseToolStripMenuItem
+            // 
+            this.miEllipseToolStripMenuItem.Name = "miEllipseToolStripMenuItem";
+            this.miEllipseToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.miEllipseToolStripMenuItem.Text = "Ellipse";
+            this.miEllipseToolStripMenuItem.Click += new System.EventHandler(this.miEllipseToolStripMenuItem_Click);
+            // 
+            // miSemicircleToolStripMenuItem
+            // 
+            this.miSemicircleToolStripMenuItem.Name = "miSemicircleToolStripMenuItem";
+            this.miSemicircleToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.miSemicircleToolStripMenuItem.Text = "Semicircle";
+            this.miSemicircleToolStripMenuItem.Click += new System.EventHandler(this.miSemicircleToolStripMenuItem_Click);
             // 
             // FrmHome
             // 
@@ -123,5 +159,9 @@
         private System.Windows.Forms.ToolStripMenuItem miExampleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem miTriangleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem miHexagonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miCircumferencesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miCircleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miEllipseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miSemicircleToolStripMenuItem;
     }
 }
