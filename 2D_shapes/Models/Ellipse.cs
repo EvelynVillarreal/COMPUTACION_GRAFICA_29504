@@ -11,7 +11,9 @@ namespace _2D_shapes.Models
         {
             if (majorAxis <= 0) throw new ArgumentException("Major axis must be positive", nameof(majorAxis));
             if (minorAxis <= 0) throw new ArgumentException("Minor axis must be positive", nameof(minorAxis));
-            if (majorAxis < minorAxis) throw new ArgumentException("Major axis must be >= minor axis");
+            if (majorAxis < minorAxis) throw new ArgumentException("Major axis must be > minor axis");
+            if (minorAxis == majorAxis) throw new ArgumentException("Minor axis must be < major axis, " +
+                "if you want to drw a circle we have that option in our menu :)");
 
             MajorAxis = majorAxis;
             MinorAxis = minorAxis;
