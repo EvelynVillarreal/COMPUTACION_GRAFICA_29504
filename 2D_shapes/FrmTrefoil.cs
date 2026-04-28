@@ -62,9 +62,16 @@ namespace _2D_shapes
             double scale = 15;
             int r = (int)(_model.Radius * scale);
 
-            g.FillEllipse(Brushes.Green, centerX - r / 2, centerY - r - r / 4, r, r);
-            g.FillEllipse(Brushes.Green, centerX - r - r / 4, centerY - r / 4, r, r);
-            g.FillEllipse(Brushes.Green, centerX + r / 4, centerY - r / 4, r, r);
+            int offset = (int)(r * 0.9); // controla qué tan juntos están
+
+            // círculo superior
+            g.FillEllipse(Brushes.Green, centerX - r / 2, centerY - offset, r, r);
+
+            // círculo izquierdo
+            g.FillEllipse(Brushes.Green, centerX - offset, centerY, r, r);
+
+            // círculo derecho
+            g.FillEllipse(Brushes.Green, centerX + offset - r, centerY, r, r);
         }
     }
 }
