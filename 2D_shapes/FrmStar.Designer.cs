@@ -34,15 +34,15 @@ namespace _2D_shapes
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.lblInputs = new System.Windows.Forms.Label();
             this.lblProcess = new System.Windows.Forms.Label();
             this.lblOutputs = new System.Windows.Forms.Label();
             this.lblGraphic = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(34, 187);
+            this.btnCalculate.Location = new System.Drawing.Point(29, 198);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(110, 34);
             this.btnCalculate.TabIndex = 0;
@@ -52,7 +52,7 @@ namespace _2D_shapes
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(173, 187);
+            this.btnReset.Location = new System.Drawing.Point(163, 198);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(75, 34);
             this.btnReset.TabIndex = 1;
@@ -62,7 +62,7 @@ namespace _2D_shapes
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(273, 187);
+            this.btnExit.Location = new System.Drawing.Point(274, 198);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 34);
             this.btnExit.TabIndex = 2;
@@ -72,21 +72,21 @@ namespace _2D_shapes
             // 
             // txtOuterRadius
             // 
-            this.txtOuterRadius.Location = new System.Drawing.Point(150, 85);
+            this.txtOuterRadius.Location = new System.Drawing.Point(150, 53);
             this.txtOuterRadius.Name = "txtOuterRadius";
             this.txtOuterRadius.Size = new System.Drawing.Size(100, 26);
             this.txtOuterRadius.TabIndex = 3;
             // 
             // txtInnerRadius
             // 
-            this.txtInnerRadius.Location = new System.Drawing.Point(150, 117);
+            this.txtInnerRadius.Location = new System.Drawing.Point(150, 85);
             this.txtInnerRadius.Name = "txtInnerRadius";
             this.txtInnerRadius.Size = new System.Drawing.Size(100, 26);
             this.txtInnerRadius.TabIndex = 4;
             // 
             // txtPoints
             // 
-            this.txtPoints.Location = new System.Drawing.Point(150, 149);
+            this.txtPoints.Location = new System.Drawing.Point(150, 117);
             this.txtPoints.Name = "txtPoints";
             this.txtPoints.Size = new System.Drawing.Size(100, 26);
             this.txtPoints.TabIndex = 5;
@@ -128,20 +128,20 @@ namespace _2D_shapes
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 91);
+            this.label2.Location = new System.Drawing.Point(25, 56);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 20);
+            this.label2.Size = new System.Drawing.Size(107, 20);
             this.label2.TabIndex = 10;
             this.label2.Text = "Outer Radius:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 146);
+            this.label3.Location = new System.Drawing.Point(25, 123);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 20);
+            this.label3.Size = new System.Drawing.Size(57, 20);
             this.label3.TabIndex = 11;
-            this.label3.Text = "Process";
+            this.label3.Text = "Points:";
             // 
             // label4
             // 
@@ -182,27 +182,48 @@ namespace _2D_shapes
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(25, 123);
+            this.label8.Location = new System.Drawing.Point(25, 91);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(107, 20);
+            this.label8.Size = new System.Drawing.Size(104, 20);
             this.label8.TabIndex = 16;
             this.label8.Text = "Inner Radius:";
             // 
-            // lblInputs
+            // lblProcess
             // 
-            this.lblInputs.AutoSize = true;
-            this.lblInputs.Location = new System.Drawing.Point(25, 155);
-            this.lblInputs.Name = "lblInputs";
-            this.lblInputs.Size = new System.Drawing.Size(60, 20);
-            this.lblInputs.TabIndex = 17;
-            this.lblInputs.Text = "Inputs";
+            this.lblProcess.Location = new System.Drawing.Point(0, 0);
+            this.lblProcess.Name = "lblProcess";
+            this.lblProcess.Size = new System.Drawing.Size(100, 23);
+            this.lblProcess.TabIndex = 18;
+            // 
+            // lblOutputs
+            // 
+            this.lblOutputs.Location = new System.Drawing.Point(0, 0);
+            this.lblOutputs.Name = "lblOutputs";
+            this.lblOutputs.Size = new System.Drawing.Size(100, 23);
+            this.lblOutputs.TabIndex = 19;
+            // 
+            // lblGraphic
+            // 
+            this.lblGraphic.Location = new System.Drawing.Point(0, 0);
+            this.lblGraphic.Name = "lblGraphic";
+            this.lblGraphic.Size = new System.Drawing.Size(100, 23);
+            this.lblGraphic.TabIndex = 20;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 159);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(66, 20);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "Process";
             // 
             // FrmStar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblInputs);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.lblProcess);
             this.Controls.Add(this.lblOutputs);
             this.Controls.Add(this.lblGraphic);
@@ -227,6 +248,7 @@ namespace _2D_shapes
             this.Text = "Star";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
@@ -248,9 +270,9 @@ namespace _2D_shapes
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label lblInputs;
         private System.Windows.Forms.Label lblProcess;
         private System.Windows.Forms.Label lblOutputs;
         private System.Windows.Forms.Label lblGraphic;
+        private System.Windows.Forms.Label label9;
     }
 }

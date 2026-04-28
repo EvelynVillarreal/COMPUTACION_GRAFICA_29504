@@ -106,7 +106,7 @@
     <Compile Include="Models\IShape.cs" />
     <Compile Include="Models\RectangleShape.cs" />
     <Compile Include="Models\Semicircle.cs" />
-<Compile Include="Models\Triangle.cs" />
+    <Compile Include="Models\Triangle.cs" />
     <Compile Include="Models\Star.cs" />
     <Compile Include="Models\Heart.cs" />
     <Compile Include="Models\Pentagon.cs" />
@@ -252,7 +252,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\README.txt" />
+    <Folder Include="Views\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
