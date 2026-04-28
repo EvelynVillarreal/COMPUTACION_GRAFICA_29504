@@ -226,6 +226,9 @@
     <EmbeddedResource Include="FrmSemicircle.resx">
       <DependentUpon>FrmSemicircle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmStar.resx">
+      <DependentUpon>FrmStar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmTriangle.resx">
       <DependentUpon>FrmTriangle.cs</DependentUpon>
     </EmbeddedResource>

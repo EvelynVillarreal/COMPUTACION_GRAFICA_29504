@@ -44,9 +44,23 @@ namespace _2D_shapes
             double scale = 15;
             int or = (int)(_model.OuterRadius * scale);
             int ir = (int)(_model.InnerRadius * scale);
-            g.FillEllipse(Brushes.White, centerX - or, centerY - or, or * 2, or * 2);
-            g.FillEllipse(Brushes.Silver, centerX - ir, centerY - ir, ir * 2, ir * 2);
-            g.DrawEllipse(Pens.Silver, centerX - ir, centerY - ir, ir * 2, ir * 2);
+            // Activar suavizado (mejora visual)
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+            // Círculo grande (base)
+            g.FillEllipse(Brushes.Gray, centerX - or, centerY - or, or * 2, or * 2);
+
+            // Desplazamiento vertical (clave para "sonrisa")
+            int offsetY = (int)(or * 0.5); // ajusta este valor
+
+            // Círculo que recorta (arriba)
+            g.FillEllipse(
+                new SolidBrush(pnlCrescent.BackColor),
+                centerX - ir,
+                centerY - ir - offsetY,
+                ir * 2,
+                ir * 2
+            );
         }
     }
 }

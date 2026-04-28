@@ -71,20 +71,35 @@ namespace _2D_shapes
             {
                 int w = width;
                 int h = height;
+
                 int x = centerX - w / 2;
                 int y = centerY - h / 2;
 
-                path.AddArc(x, y, w / 2, h / 2, 180, 90);
-                path.AddArc(x + w / 2, y, w / 2, h / 2, 270, 90);
+                g.SmoothingMode = SmoothingMode.AntiAlias;
 
-                PointF[] curvePoints = new PointF[] {
-                    new PointF(centerX + w * 0.15f, centerY + h * 0.35f),
-                    new PointF(centerX, centerY + h * 0.7f),
-                    new PointF(centerX - w * 0.15f, centerY + h * 0.35f)
-                };
-                path.AddCurve(curvePoints);
+                //Arcos superiores 
+                path.AddArc(x, y, w / 2, h / 2, 180, 180);          // izquierda
+                path.AddArc(x + w / 2, y, w / 2, h / 2, 180, 180);  // derecha
 
-                g.DrawPath(Pens.Red, path);
+                //Punto inferior 
+                PointF bottom = new PointF(centerX, centerY + h * 0.65f);
+
+                //Curvas 
+                path.AddBezier(
+                    new PointF(x + w, y + h * 0.25f),   // inicio derecha
+                    new PointF(centerX + w * 0.35f, centerY + h * 0.45f),
+                    new PointF(centerX + w * 0.1f, centerY + h * 0.65f),
+                    bottom
+                );
+
+                path.AddBezier(
+                    bottom,
+                    new PointF(centerX - w * 0.1f, centerY + h * 0.65f),
+                    new PointF(centerX - w * 0.35f, centerY + h * 0.45f),
+                    new PointF(x, y + h * 0.25f) // vuelve al inicio
+                );
+
+                path.CloseFigure();
                 g.FillPath(Brushes.Red, path);
             }
         }
