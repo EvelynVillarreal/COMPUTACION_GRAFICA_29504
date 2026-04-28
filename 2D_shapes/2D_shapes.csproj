@@ -106,7 +106,103 @@
     <Compile Include="Models\IShape.cs" />
     <Compile Include="Models\RectangleShape.cs" />
     <Compile Include="Models\Semicircle.cs" />
-    <Compile Include="Models\Triangle.cs" />
+<Compile Include="Models\Triangle.cs" />
+    <Compile Include="Models\Star.cs" />
+    <Compile Include="Models\Heart.cs" />
+    <Compile Include="Models\Pentagon.cs" />
+    <Compile Include="Models\Octagon.cs" />
+    <Compile Include="Models\Trefoil.cs" />
+    <Compile Include="Models\Kite.cs" />
+    <Compile Include="Models\Trapezoid.cs" />
+    <Compile Include="Models\Parallelogram.cs" />
+    <Compile Include="Models\Crescent.cs" />
+    <Compile Include="Models\Cross.cs" />
+    <Compile Include="Models\QuarterCircle.cs" />
+    <Compile Include="Models\Rhombus.cs" />
+    <Compile Include="Controllers\StarController.cs" />
+    <Compile Include="Controllers\HeartController.cs" />
+    <Compile Include="Controllers\PentagonController.cs" />
+    <Compile Include="Controllers\OctagonController.cs" />
+    <Compile Include="Controllers\TrefoilController.cs" />
+    <Compile Include="Controllers\KiteController.cs" />
+    <Compile Include="Controllers\TrapezoidController.cs" />
+    <Compile Include="Controllers\ParallelogramController.cs" />
+    <Compile Include="Controllers\CrescentController.cs" />
+    <Compile Include="Controllers\CrossController.cs" />
+    <Compile Include="Controllers\QuarterCircleController.cs" />
+    <Compile Include="Controllers\RhombusController.cs" />
+    <Compile Include="FrmStar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStar.Designer.cs">
+      <DependentUpon>FrmStar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHeart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHeart.Designer.cs">
+      <DependentUpon>FrmHeart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPentagon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPentagon.Designer.cs">
+      <DependentUpon>FrmPentagon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOctagon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOctagon.Designer.cs">
+      <DependentUpon>FrmOctagon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTrefoil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTrefoil.Designer.cs">
+      <DependentUpon>FrmTrefoil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKite.Designer.cs">
+      <DependentUpon>FrmKite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTrapezoid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTrapezoid.Designer.cs">
+      <DependentUpon>FrmTrapezoid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParallelogram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmParallelogram.Designer.cs">
+      <DependentUpon>FrmParallelogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCrescent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCrescent.Designer.cs">
+      <DependentUpon>FrmCrescent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCross.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCross.Designer.cs">
+      <DependentUpon>FrmCross.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQuarter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuarter.Designer.cs">
+      <DependentUpon>FrmQuarter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRhombus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRhombus.Designer.cs">
+      <DependentUpon>FrmRhombus.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmCircle.resx">

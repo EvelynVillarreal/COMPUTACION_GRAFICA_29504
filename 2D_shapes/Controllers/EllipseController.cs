@@ -22,7 +22,7 @@ namespace _2D_shapes.Controllers
             }
             if (major < minor)
             {
-                error = "El eje mayor debe ser mayor o igual al eje menor.";
+                error = "El eje mayor debe ser mayor al eje menor.";
                 return false;
             }
             if (Math.Abs(major - minor) < 1e-9)

@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 using System.Windows.Forms;
 
 namespace _2D_shapes
@@ -64,6 +57,97 @@ namespace _2D_shapes
             FrmSemicircle frmSemicircle = new FrmSemicircle();
             frmSemicircle.MdiParent = this;
             frmSemicircle.Show();
+        }
+
+        private void miStarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmStar frmStar = new FrmStar();
+            frmStar.MdiParent = this;
+            frmStar.Show();
+        }
+
+        private void miHeartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmHeart frmHeart = new FrmHeart();
+            frmHeart.MdiParent = this;
+            frmHeart.Show();
+        }
+
+        private void miPentagonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPentagon frmPentagon = new FrmPentagon();
+            frmPentagon.MdiParent = this;
+            frmPentagon.Show();
+        }
+
+        private void miOctagonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmOctagon frmOctagon = new FrmOctagon();
+            frmOctagon.MdiParent = this;
+            frmOctagon.Show();
+        }
+
+        private void miTrefoilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmTrefoil frmTrefoil = new FrmTrefoil();
+            frmTrefoil.MdiParent = this;
+            frmTrefoil.Show();
+        }
+
+        private void miKiteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmKite frmKite = new FrmKite();
+            frmKite.MdiParent = this;
+            frmKite.Show();
+        }
+
+        private void miTrapezoidToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmTrapezoid frmTrapezoid = new FrmTrapezoid();
+            frmTrapezoid.MdiParent = this;
+            frmTrapezoid.Show();
+        }
+
+        private void miParallelogramToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmParallelogram frmParallelogram = new FrmParallelogram();
+            frmParallelogram.MdiParent = this;
+            frmParallelogram.Show();
+        }
+
+        private void miCrescentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCrescent frmCrescent = new FrmCrescent();
+            frmCrescent.MdiParent = this;
+            frmCrescent.Show();
+        }
+
+        private void miCrossToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCross frmCross = new FrmCross();
+            frmCross.MdiParent = this;
+            frmCross.Show();
+        }
+
+        private void miQuarterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmQuarter frmQuarter = new FrmQuarter();
+            frmQuarter.MdiParent = this;
+            frmQuarter.Show();
+        }
+
+        private void miRhombusToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmRhombus frmRhombus = new FrmRhombus();
+            frmRhombus.MdiParent = this;
+            frmRhombus.Show();
+        }
+
+        private void miTrefoilToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            FrmTrefoil frmTrefoil = new FrmTrefoil();
+            frmTrefoil.MdiParent = this;
+            frmTrefoil.Show();
         }
     }
 }

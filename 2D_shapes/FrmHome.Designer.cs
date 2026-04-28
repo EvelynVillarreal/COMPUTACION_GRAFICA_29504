@@ -1,16 +1,9 @@
-﻿namespace _2D_shapes
+namespace _2D_shapes
 {
     partial class FrmHome
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +15,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -35,10 +24,25 @@
             this.miRectangleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miTriangleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miHexagonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miPolygonsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miStarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miHeartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miPentagonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miOctagonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miQuadrilateralsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miKiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miTrapezoidToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miParallelogramToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miRhombusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miCrossToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miQuarterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miCircumferencesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miCircleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miEllipseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miSemicircleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miCurvesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miCrescentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miTrefoilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,7 +80,12 @@
             this.miRectangleToolStripMenuItem,
             this.miTriangleToolStripMenuItem,
             this.miHexagonToolStripMenuItem,
-            this.miCircumferencesToolStripMenuItem});
+            this.miPolygonsToolStripMenuItem,
+            this.miQuadrilateralsToolStripMenuItem,
+            this.miCrossToolStripMenuItem,
+            this.miQuarterToolStripMenuItem,
+            this.miCircumferencesToolStripMenuItem,
+            this.miCurvesToolStripMenuItem});
             this.miShapesToolStripMenuItem.Name = "miShapesToolStripMenuItem";
             this.miShapesToolStripMenuItem.Size = new System.Drawing.Size(85, 29);
             this.miShapesToolStripMenuItem.Text = "Shapes";
@@ -102,10 +111,103 @@
             this.miHexagonToolStripMenuItem.Text = "Hexagon";
             this.miHexagonToolStripMenuItem.Click += new System.EventHandler(this.miHexagonToolStripMenuItem_Click);
             // 
+            // miPolygonsToolStripMenuItem
+            // 
+            this.miPolygonsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.miStarToolStripMenuItem,
+            this.miHeartToolStripMenuItem,
+            this.miPentagonToolStripMenuItem,
+            this.miOctagonToolStripMenuItem});
+            this.miPolygonsToolStripMenuItem.Name = "miPolygonsToolStripMenuItem";
+            this.miPolygonsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.miPolygonsToolStripMenuItem.Text = "Polygons";
+            // 
+            // miStarToolStripMenuItem
+            // 
+            this.miStarToolStripMenuItem.Name = "miStarToolStripMenuItem";
+            this.miStarToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.miStarToolStripMenuItem.Text = "Star";
+            this.miStarToolStripMenuItem.Click += new System.EventHandler(this.miStarToolStripMenuItem_Click);
+            // 
+            // miHeartToolStripMenuItem
+            // 
+            this.miHeartToolStripMenuItem.Name = "miHeartToolStripMenuItem";
+            this.miHeartToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.miHeartToolStripMenuItem.Text = "Heart";
+            this.miHeartToolStripMenuItem.Click += new System.EventHandler(this.miHeartToolStripMenuItem_Click);
+            // 
+            // miPentagonToolStripMenuItem
+            // 
+            this.miPentagonToolStripMenuItem.Name = "miPentagonToolStripMenuItem";
+            this.miPentagonToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.miPentagonToolStripMenuItem.Text = "Pentagon";
+            this.miPentagonToolStripMenuItem.Click += new System.EventHandler(this.miPentagonToolStripMenuItem_Click);
+            // 
+            // miOctagonToolStripMenuItem
+            // 
+            this.miOctagonToolStripMenuItem.Name = "miOctagonToolStripMenuItem";
+            this.miOctagonToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.miOctagonToolStripMenuItem.Text = "Octagon";
+            this.miOctagonToolStripMenuItem.Click += new System.EventHandler(this.miOctagonToolStripMenuItem_Click);
+            // 
+            // miQuadrilateralsToolStripMenuItem
+            // 
+            this.miQuadrilateralsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.miKiteToolStripMenuItem,
+            this.miTrapezoidToolStripMenuItem,
+            this.miParallelogramToolStripMenuItem,
+            this.miRhombusToolStripMenuItem});
+            this.miQuadrilateralsToolStripMenuItem.Name = "miQuadrilateralsToolStripMenuItem";
+            this.miQuadrilateralsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.miQuadrilateralsToolStripMenuItem.Text = "Quadrilaterals";
+            // 
+            // miKiteToolStripMenuItem
+            // 
+            this.miKiteToolStripMenuItem.Name = "miKiteToolStripMenuItem";
+            this.miKiteToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.miKiteToolStripMenuItem.Text = "Kite";
+            this.miKiteToolStripMenuItem.Click += new System.EventHandler(this.miKiteToolStripMenuItem_Click);
+            // 
+            // miTrapezoidToolStripMenuItem
+            // 
+            this.miTrapezoidToolStripMenuItem.Name = "miTrapezoidToolStripMenuItem";
+            this.miTrapezoidToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.miTrapezoidToolStripMenuItem.Text = "Trapezoid";
+            this.miTrapezoidToolStripMenuItem.Click += new System.EventHandler(this.miTrapezoidToolStripMenuItem_Click);
+            // 
+            // miParallelogramToolStripMenuItem
+            // 
+            this.miParallelogramToolStripMenuItem.Name = "miParallelogramToolStripMenuItem";
+            this.miParallelogramToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.miParallelogramToolStripMenuItem.Text = "Parallelogram";
+            this.miParallelogramToolStripMenuItem.Click += new System.EventHandler(this.miParallelogramToolStripMenuItem_Click);
+            // 
+            // miRhombusToolStripMenuItem
+            // 
+            this.miRhombusToolStripMenuItem.Name = "miRhombusToolStripMenuItem";
+            this.miRhombusToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.miRhombusToolStripMenuItem.Text = "Rhombus";
+            this.miRhombusToolStripMenuItem.Click += new System.EventHandler(this.miRhombusToolStripMenuItem_Click);
+            // 
+            // miCrossToolStripMenuItem
+            // 
+            this.miCrossToolStripMenuItem.Name = "miCrossToolStripMenuItem";
+            this.miCrossToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.miCrossToolStripMenuItem.Text = "Cross";
+            this.miCrossToolStripMenuItem.Click += new System.EventHandler(this.miCrossToolStripMenuItem_Click);
+            // 
+            // miQuarterToolStripMenuItem
+            // 
+            this.miQuarterToolStripMenuItem.Name = "miQuarterToolStripMenuItem";
+            this.miQuarterToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.miQuarterToolStripMenuItem.Text = "Quarter Circle";
+            this.miQuarterToolStripMenuItem.Click += new System.EventHandler(this.miQuarterToolStripMenuItem_Click);
+            // 
             // miCircumferencesToolStripMenuItem
             // 
             this.miCircumferencesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.miCircleToolStripMenuItem,
+            this.miTrefoilToolStripMenuItem,
             this.miEllipseToolStripMenuItem,
             this.miSemicircleToolStripMenuItem});
             this.miCircumferencesToolStripMenuItem.Name = "miCircumferencesToolStripMenuItem";
@@ -132,6 +234,28 @@
             this.miSemicircleToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.miSemicircleToolStripMenuItem.Text = "Semicircle";
             this.miSemicircleToolStripMenuItem.Click += new System.EventHandler(this.miSemicircleToolStripMenuItem_Click);
+            // 
+            // miCurvesToolStripMenuItem
+            // 
+            this.miCurvesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.miCrescentToolStripMenuItem});
+            this.miCurvesToolStripMenuItem.Name = "miCurvesToolStripMenuItem";
+            this.miCurvesToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.miCurvesToolStripMenuItem.Text = "Curves";
+            // 
+            // miCrescentToolStripMenuItem
+            // 
+            this.miCrescentToolStripMenuItem.Name = "miCrescentToolStripMenuItem";
+            this.miCrescentToolStripMenuItem.Size = new System.Drawing.Size(181, 34);
+            this.miCrescentToolStripMenuItem.Text = "Crescent";
+            this.miCrescentToolStripMenuItem.Click += new System.EventHandler(this.miCrescentToolStripMenuItem_Click);
+            // 
+            // miTrefoilToolStripMenuItem
+            // 
+            this.miTrefoilToolStripMenuItem.Name = "miTrefoilToolStripMenuItem";
+            this.miTrefoilToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.miTrefoilToolStripMenuItem.Text = "Trefoil";
+            this.miTrefoilToolStripMenuItem.Click += new System.EventHandler(this.miTrefoilToolStripMenuItem_Click_1);
             // 
             // FrmHome
             // 
@@ -163,5 +287,20 @@
         private System.Windows.Forms.ToolStripMenuItem miCircleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem miEllipseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem miSemicircleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miPolygonsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miStarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miHeartToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miPentagonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miOctagonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miQuadrilateralsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miKiteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miTrapezoidToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miParallelogramToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miRhombusToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miCrossToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miQuarterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miCurvesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miCrescentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miTrefoilToolStripMenuItem;
     }
 }
